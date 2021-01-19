@@ -75,7 +75,7 @@ function validateCnp($input) {
     $cnpArray = str_split($input);
     foreach($cnpArray as $key => $value) {
         if(!is_numeric($value)) {
-            $error = "CNP-ul trebuie sa contina doar cifre"; 
+            echo "CNP-ul trebuie sa contina doar cifre"; 
             return false;
         }
         if($key == 12) { //sarim peste ultima cifra (fiind fix cifra de control)
