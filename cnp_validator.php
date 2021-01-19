@@ -30,7 +30,7 @@ function getAn($cnpArray) {
             $an += 1901;
             break;
         default : 
-            return false;
+            return 0;
     }
     return $an;
 }
